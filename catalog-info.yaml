@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-app
+  description: test-app for testing argocd
+  tags:
+    - go
+  annotations:
+    argocd/app-name: test-app
+spec:
+  type: service
+  lifecycle: production
+  owner: sharks
